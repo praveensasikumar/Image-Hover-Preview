@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Image Hover Preview ✨
 
 **The most beautiful image hover preview extension for Chrome (2025)**
@@ -36,3 +37,7 @@ Just zip the entire folder and upload — already 100% Manifest V3 compliant.
 Praveen Sasikumar © 2025
 
 ⭐ **Star this repo if you love it!**
+=======
+# Image-Hover-Preview
+Beautiful image hover preview with thumbnail, domain &amp; dimensions. One-click per-site ON/OFF toggle via gorgeous switch. Works on Instagram, X, Reddit, Pinterest. No ads • No tracking • Manifest V3 • Open source
+>>>>>>> 74a2d4066d027a8110fbe86ba12cc5c2c226701a
