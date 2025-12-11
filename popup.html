@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body{width:300px;padding:20px;background:#1e1e1e;color:#fff;font-family:system-ui;text-align:center;margin:0}
+    h1{font-size:17px;margin:0 0 8px;background:linear-gradient(90deg,#00d4ff,#0077ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .domain{font-size:13px;opacity:0.8;margin-bottom:20px;word-break:break-all}
+    .toggle-container{margin:20px 0}
+    .toggle{position:relative;display:inline-block;width:86px;height:46px}
+    .toggle input{opacity:0;width:0;height:0}
+    .slider{position:absolute;cursor:pointer;inset:0;background:#444;transition:.4s;border-radius:50px;box-shadow:inset 0 4px 8px rgba(0,0,0,.4)}
+    .slider:before{position:absolute;content:"";height:38px;width:38px;left:4px;bottom:4px;background:#fff;transition:.4s;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+    input:checked + .slider{background:linear-gradient(90deg,#4caf50,#66bb6a);box-shadow:0 0 12px rgba(76,175,80,.5)}
+    input:checked + .slider:before{transform:translateX(40px)}
+    .status{margin-top:16px;font-size:14px;font-weight:500}
+    .on{color:#4caf50}
+    .off{color:#e91e63}
+  </style>
+</head>
+<body>
+  <h1>Image Hover Preview</h1>
+  <div class="domain" id="domain">…</div>
+  <div class="toggle-container">
+    <label class="toggle">
+      <input type="checkbox" id="power">
+      <span class="slider"></span>
+    </label>
+  </div>
+  <div class="status" id="status">Loading…</div>
+
+  <!-- External script – fixes CSP error -->
+  <script src="popup.js"></script>
+</body>
+</html>
